@@ -51,7 +51,7 @@ msgid ""
 "href=\"mailto:me@iriscot.org\">me@iriscot.org</a>!"
 msgstr ""
 "Если просто хочешь поболтать, пиши в "
-"<ahref=\"http://t.me/iriscot\">телегу</a> или на <a "
+"<a href=\"http://t.me/iriscot\">телегу</a> или на <a "
 "href=\"mailto:me@iriscot.org\">почту</a>!"
 
 #: templates/index.html:123
