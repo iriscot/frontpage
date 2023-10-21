@@ -68,5 +68,5 @@ msgstr "Сейчас у меня"
 
 #: templates/index.html:131
 msgid "in my timezone now"
-msgstr ""
+msgstr " "
 

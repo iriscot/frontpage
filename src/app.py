@@ -30,6 +30,8 @@ def index():
         media = json.load(json_file)
 
     artworks = tg_photos_parse.get_imgs('iriscot_arts')
+    print('erwr')
+    print(artworks)
 
     current_year = datetime.datetime.now().year
     user_language = get_locale()

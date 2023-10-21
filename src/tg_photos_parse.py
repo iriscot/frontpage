@@ -1,8 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
+from cachetools import cached, TTLCache
 import re
 
 
+@cached(cache=TTLCache(maxsize=1024, ttl=10800))
 def get_imgs(usename):
     # URL of the Telegram webpage
     url = f"https://t.me/s/{usename}"
@@ -24,4 +26,4 @@ def get_imgs(usename):
         image_url = re.search(r'url\((.*?)\)', style).group(1)
         background_images.append(image_url[1:-1])
 
-    return reversed(background_images[-6:])
+    return list(reversed(background_images[-6:]))

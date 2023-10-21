@@ -7,6 +7,7 @@ A personal frontpage showcasing my projects.
 
 Build an image
 ```
+cd src
 docker build -t frontpage .
 ```
 

@@ -38,7 +38,7 @@ body {
      margin-top: 20px;
 }
  .plashque{
-     background-color: #424e59;
+     background-color: rgba(92, 109, 125, 0.5);
      border-radius: 5px;
      text-transform: uppercase;
      display: inline-block;
