@@ -29,7 +29,7 @@ msgid "Hi, I am Iriscot"
 msgstr "Привет, я Iriscot"
 
 #: templates/index.html:25
-msgid "Development"
+msgid "Software"
 msgstr "Разрабатываю"
 
 #: templates/index.html:57
