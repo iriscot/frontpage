@@ -1,0 +1,64 @@
+# Translations template for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-10-18 16:34+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.0\n"
+
+#: templates/index.html:9
+msgid "Everything you ever wanted to know about Iriscot."
+msgstr ""
+
+#: templates/index.html:14
+msgid "Hi, I am Iriscot"
+msgstr ""
+
+#: templates/index.html:25
+msgid "Development"
+msgstr ""
+
+#: templates/index.html:57
+msgid "Artworks"
+msgstr ""
+
+#: templates/index.html:85
+msgid "And also"
+msgstr ""
+
+#: templates/index.html:121
+msgid "Want to talk?"
+msgstr ""
+
+#: templates/index.html:122
+msgid ""
+"If you just want to chat, message me on <a "
+"href=\"http://t.me/iriscot\">Telegram</a> or send an email to <a "
+"href=\"mailto:me@iriscot.org\">me@iriscot.org</a>!"
+msgstr ""
+
+#: templates/index.html:123
+msgid ""
+"I also offer paid consultations in psychology or IT (development, "
+"security)."
+msgstr ""
+
+#: templates/index.html:131
+msgid "It is"
+msgstr ""
+
+#: templates/index.html:131
+msgid "in my timezone now"
+msgstr ""
+

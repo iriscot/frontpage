@@ -1,0 +1,72 @@
+# Russian translations for Iriscot Frontpage.
+# Copyright (C) 2023 Iriscot Software
+# This file is distributed under the same license as the Iriscot Frontpage
+# project.
+# Iriscot <me@iriscot.org>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  1.0\n"
+"Report-Msgid-Bugs-To: me@iriscot.org\n"
+"POT-Creation-Date: 2023-10-18 16:34+0300\n"
+"PO-Revision-Date: 2023-10-18 15:24+0300\n"
+"Last-Translator: Iriscot <me@iriscot.org>\n"
+"Language: ru\n"
+"Language-Team: ru <me@iriscot.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.0\n"
+
+#: templates/index.html:9
+msgid "Everything you ever wanted to know about Iriscot."
+msgstr "Все, что вы когда-либо хотели узнать об Iriscot, но стеснялись спросить."
+
+#: templates/index.html:14
+msgid "Hi, I am Iriscot"
+msgstr "Привет, я Iriscot"
+
+#: templates/index.html:25
+msgid "Development"
+msgstr "Разрабатываю"
+
+#: templates/index.html:57
+msgid "Artworks"
+msgstr "Рисую"
+
+#: templates/index.html:85
+msgid "And also"
+msgstr "А также"
+
+#: templates/index.html:121
+msgid "Want to talk?"
+msgstr "А поговорить?"
+
+#: templates/index.html:122
+msgid ""
+"If you just want to chat, message me on <a "
+"href=\"http://t.me/iriscot\">Telegram</a> or send an email to <a "
+"href=\"mailto:me@iriscot.org\">me@iriscot.org</a>!"
+msgstr ""
+"Если просто хочешь поболтать, пиши в "
+"<ahref=\"http://t.me/iriscot\">телегу</a> или на <a "
+"href=\"mailto:me@iriscot.org\">почту</a>!"
+
+#: templates/index.html:123
+msgid ""
+"I also offer paid consultations in psychology or IT (development, "
+"security)."
+msgstr ""
+"А ещё я могу провести для тебя платную консультацию по психологии или IT "
+"(разработка, безопасность)."
+
+#: templates/index.html:131
+msgid "It is"
+msgstr "Сейчас у меня"
+
+#: templates/index.html:131
+msgid "in my timezone now"
+msgstr ""
+
