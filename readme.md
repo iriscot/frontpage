@@ -2,22 +2,27 @@
 
 A personal frontpage showcasing my projects.
 
-## Build
 
 
-Build an image
-```
-cd src
-docker build -t frontpage .
-```
+## Build & running
 
-Run the container
+1. Clone the repo
+
+2. Run the automated install script
 ```
-docker run -d -p 4888:4888 --name=frontpage --restart=unless-stopped <id-from-command-above>
+./update.sh
 ```
 
-Reverse proxy from port 4888
+3. Reverse proxy from port 4888
 
-????
+4. ????
 
-PROFIT!!!
+5. PROFIT!!!11
+
+
+## Updating
+
+To update simply execute installation script
+```
+./update.sh
+```
