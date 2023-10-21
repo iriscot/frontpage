@@ -10,4 +10,4 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-CMD ["gunicorn", "wsgi:app", "-b", "0.0.0.0:5000"]
+CMD ["gunicorn", "wsgi:app", "-b", "0.0.0.0:4888"]
