@@ -47,7 +47,7 @@
         "links": [
             {"title": "Inst", "href": "https://instagram.com/mikaminorth", "lang": "en"},
             {"title": "Twitter", "href": "https://x.com/mikaminorth", "lang": "en"},
-            {"title": "Telegram", "href": "https://t.me/mikami_arts", "lang": "ru"}
+            {"title": "Telegram", "href": "tg://resolve?domain=mikami_arts", "lang": "ru"}
         ]
     },
     "etc": {
@@ -57,35 +57,35 @@
             "link": "tg://resolve?domain=mikami_arts",
             "image": "mikami.webp",
             "lang": "ru",
-            "desc": "Аниме арты"
+            "desc": "Anime Artworks"
         },
         {
             "name": "framed feelings 🌁",
             "link": "tg://resolve?domain=framed_feelings",
             "image": "framed_feelings.webp",
             "lang": "ru",
-            "desc": "Фотоальбом"
+            "desc": "Photo Album"
         },
         {
             "name": "Wildest Dreams",
             "link": "tg://resolve?domain=wildestdreamsever",
             "image": "wildest.webp",
             "lang": "ru",
-            "desc": "Личный блог"
+            "desc": "Personal Blog"
         },
         {
             "name": "Music",
             "link": "https://t.me/+rKm0WOXJeUViMjgy",
             "image": "music.webp",
             "lang": "ru",
-            "desc": "Мой плейлист"
+            "desc": "My Playlist"
         },
         {
             "name": "Finally, цитатник",
             "link": "tg://resolve?domain=quoteslib",
             "image": "quotes.webp",
             "lang": "ru",
-            "desc": "Цитатник"
+            "desc": "Quotes Collection"
         }
     ],
         "links": [

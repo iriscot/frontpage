@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-06-03 13:03+0300\n"
+"POT-Creation-Date: 2024-06-03 17:37+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,48 +17,52 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.13.0\n"
 
-#: templates/index.html:10
+#: app.py:38
+msgid "desc"
+msgstr ""
+
+#: templates/index.html:10 templates/index.html:18
 msgid "Everything you ever wanted to know about Iriscot."
 msgstr ""
 
-#: templates/index.html:15
+#: templates/index.html:27
 msgid "Hi, I am Iriscot"
 msgstr ""
 
-#: templates/index.html:24
+#: templates/index.html:36
 msgid "My media"
 msgstr ""
 
-#: templates/index.html:61
-msgid "Software"
-msgstr ""
-
-#: templates/index.html:91
+#: templates/index.html:70
 msgid "Artworks"
 msgstr ""
 
-#: templates/index.html:120
+#: templates/index.html:96
+msgid "Software"
+msgstr ""
+
+#: templates/index.html:130
 msgid "Want to talk?"
 msgstr ""
 
-#: templates/index.html:121
+#: templates/index.html:131
 msgid ""
 "If you just want to chat, message me on <a "
 "href=\"http://t.me/iriscot\">Telegram</a> or send an email to <a "
 "href=\"mailto:me@iriscot.org\">me@iriscot.org</a>!"
 msgstr ""
 
-#: templates/index.html:122
+#: templates/index.html:132
 msgid ""
 "I also offer paid consultations in psychology or IT (development, "
 "infosec)."
 msgstr ""
 
-#: templates/index.html:130
+#: templates/index.html:140
 msgid "It is"
 msgstr ""
 
-#: templates/index.html:130
+#: templates/index.html:140
 msgid "in my timezone now"
 msgstr ""
 

@@ -66,39 +66,6 @@
 </p>
 </div>
 
-
-
-
-    	<div class="center">
-            <h2 class="section_title">{{ _('Software') }}</h2>
-    	</div>
-<div class="projects">
-    {% for project in media.projects.cards %}
-    <div class="project hover_flashlight">
-        <img class="circle-image" src="{{ url_for('static', filename='images/' + project.image) }}" alt="{{ project.name }}">
-        <div class="text-content">
-            <span class="project-title">
-                <a href="{{ project.link }}">{{ project.name }}</a>
-            </span>
-            <p class="project-desc">{{ project.language }} &middot; {{ project.year }}</p>
-        </div>
-    </div>
-    {% endfor %}
-</div>
-
-<div class="center links-after">
-    <p>
-    {% for link in media.projects.links %}
-            <a class="button is-dark" href="{{ link.href }}">{{ link.title }}
-                {% if link.lang != user_language %}
-                <span class="lang_code">{{ link.lang }}</span>
-                {% endif %}
-                </a>
-    {% endfor %}
-</p>
-</div>
-
-
         <div class="center">
             <h2 class="section_title">{{ _('Artworks') }}</h2>
         </div>
@@ -124,6 +91,37 @@
 </p>
 </div>
 
+
+        <div class="center">
+            <h2 class="section_title">{{ _('Software') }}</h2>
+        </div>
+<div class="projects">
+    {% for project in media.projects.cards %}
+    <a href="{{ project.link }}">
+    <div class="project hover_flashlight">
+        <img class="circle-image" src="{{ url_for('static', filename='images/' + project.image) }}" alt="{{ project.name }}">
+        <div class="text-content">
+            <span class="project-title">
+                {{ project.name }}
+            </span>
+            <p class="project-desc">{{ project.language }} &middot; {{ project.year }}</p>
+        </div>
+    </div>
+    </a>
+    {% endfor %}
+</div>
+
+<div class="center links-after">
+    <p>
+    {% for link in media.projects.links %}
+            <a class="button is-dark" href="{{ link.href }}">{{ link.title }}
+                {% if link.lang != user_language %}
+                <span class="lang_code">{{ link.lang }}</span>
+                {% endif %}
+                </a>
+    {% endfor %}
+</p>
+</div>
 
 </section>
 

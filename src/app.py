@@ -1,12 +1,11 @@
 from flask import Flask, render_template, request
-from flask_babel import Babel
+from flask_babel import Babel, _
 import tg_photos_parse
 import datetime
 import json
 
 app = Flask(__name__, static_url_path='/static')
 babel = Babel(app)
-
 
 app.config['BABEL_TRANSLATION_DIRECTORIES'] = 'translations'
 app.config['LANGUAGES'] = ['en', 'ru']  # List of supported languages
@@ -33,6 +32,11 @@ def index():
 
     current_year = datetime.datetime.now().year
     user_language = get_locale()
+
+    # Localize descriptions
+    for card in media['etc']['cards']:
+        card['desc'] = _(card['desc'])
+
     return render_template('index.html',
                            media=media,
                            artworks=artworks,
