@@ -26,4 +26,4 @@ def get_imgs(usename):
         image_url = re.search(r'url\((.*?)\)', style).group(1)
         background_images.append(image_url[1:-1])
 
-    return list(reversed(background_images[-6:]))
+    return list(reversed(background_images[-16:]))

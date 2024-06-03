@@ -1,14 +1,12 @@
 html, body{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 body {
      background-color: #001;
      color: #fff;
      font-size: 14px;
-     max-width: 100%;
 }
  a{
      color: #fff;
@@ -20,12 +18,12 @@ body {
  header{
      text-align: center;
      margin-bottom: 50px;
-     min-height: 300px;
+     min-height: 200px;
      background: radial-gradient(ellipse 100% 125% at center, rgba(93,13,115,1) 0%, rgba(0,0,0,0) 19%);
 }
 
  header h1{
-     font-size: 4em;
+     font-size: 6em;
      font-weight: 100;
      margin-bottom: 0;
 }
@@ -59,9 +57,14 @@ body {
      margin: 15px auto;
 }
  .project {
-     display: flex;
-     align-items: center;
-     padding: 20px;
+display: flex;
+align-items: center;
+margin: 10px 1rem;
+border-radius: 4px;
+background: linear-gradient(139deg, rgba(2, 0, 37, 0), rgba(9, 9, 122, 0.51) 65.55%, rgba(176, 24, 179, 0.36));
+box-sizing: border-box;
+padding: 1rem 3rem;
+transition: background 1s ease;
 }
  .circle-image {
      width: 50px;
@@ -74,43 +77,29 @@ body {
      flex: 1;
 }
  .project .project-title{
-     font-weight: bold;
-     font-size: 1.4em;
+     font-size: 1.6em;
 }
  .project .project-desc{
-     margin-bottom: 0;
-     margin-top: 5px;
-     opacity: .8;
+margin-bottom: 0;
+margin-top: 5px;
+opacity: .8;
+position: absolute;
+bottom: 0;
+font-size: 3rem;
+font-weight: 100;
+right: 2rem;
 }
+@media screen and (max-width: 600px) {
+     .project .project-desc{
+        font-size: 1.6rem;
+     }
+      .project .project-title{
+     font-size: 1.2em;
+}
+}
+
  .links-after{
      opacity: .8;
-}
- .image-grid {
-     display: grid;
-     grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
-     grid-row-gap: 10px;
-     grid-column-gap: 10px;
-     padding: 10px;
-     width: 100%;
-}
- .image-item {
-     position: relative;
-     overflow: hidden;
-     border-radius: 5px;
-     max-width: 128px;
-     max-height: 128px;
-     transition: all .5s ease;
-}
- .image-item img {
-     width: 100%;
-     height: 100%;
-     display: block;
-     object-fit: cover;
-}
- .image-item:hover {
-     transform: scale(1.9);
-     z-index: 9999999;
-     box-shadow: -2px 1px 47px 16px rgba(25,64,141,0.54);
 }
  section.talk{
      background: linear-gradient(270deg, #3d0769, #073469, #005974);
@@ -153,4 +142,79 @@ body {
      opacity: .5;
      user-select: none;
      cursor: default;
+}
+
+
+.image-grid {
+  column-count: 4;
+  --webkit-column-count: 4;
+  --moz-column-count: 4;
+  gap: 1rem;
+}
+
+.image-item img {
+  height: auto;
+  width: 100%;
+  border-radius: 4px;
+}
+
+
+/* Responsive-ness for different screen-sizes */
+@media screen and (max-width: 810px) {
+  .image-grid {
+    column-count: 3;
+    --webkit-column-count: 3;
+    --moz-column-count: 3;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .image-grid {
+    column-count: 2;
+    --webkit-column-count: 2;
+    --moz-column-count: 2;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .image-grid {
+    column-count: 1;
+    --webkit-column-count: 1;
+    --moz-column-count: 1;
+  }
+}
+
+
+.section_title{
+    font-size: 4rem;
+font-weight: 100;
+/*margin-left: 3rem;*/
+}
+
+
+
+/* ------------ CARD ------------ */
+.hover_flashlight {
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
+}
+
+.hover_flashlight:after {
+  content: "";
+  width: 1000%;
+  height: 1000%;
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.18), transparent);
+  transition: opacity 0.7s ease-out;
+}
+
+/* ------------ STATES ------------ */
+.hover_flashlight:hover:after,
+.hover_flashlight:hover {
+  opacity: 1;
 }

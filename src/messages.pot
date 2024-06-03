@@ -1,14 +1,14 @@
 # Translations template for PROJECT.
-# Copyright (C) 2023 ORGANIZATION
+# Copyright (C) 2024 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-10-18 16:34+0300\n"
+"POT-Creation-Date: 2024-06-03 13:03+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,48 +17,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.13.0\n"
 
-#: templates/index.html:9
+#: templates/index.html:10
 msgid "Everything you ever wanted to know about Iriscot."
 msgstr ""
 
-#: templates/index.html:14
+#: templates/index.html:15
 msgid "Hi, I am Iriscot"
 msgstr ""
 
-#: templates/index.html:25
-msgid "Development"
+#: templates/index.html:24
+msgid "My media"
 msgstr ""
 
-#: templates/index.html:57
+#: templates/index.html:61
+msgid "Software"
+msgstr ""
+
+#: templates/index.html:91
 msgid "Artworks"
 msgstr ""
 
-#: templates/index.html:85
-msgid "And also"
-msgstr ""
-
-#: templates/index.html:121
+#: templates/index.html:120
 msgid "Want to talk?"
 msgstr ""
 
-#: templates/index.html:122
+#: templates/index.html:121
 msgid ""
 "If you just want to chat, message me on <a "
 "href=\"http://t.me/iriscot\">Telegram</a> or send an email to <a "
 "href=\"mailto:me@iriscot.org\">me@iriscot.org</a>!"
 msgstr ""
 
-#: templates/index.html:123
+#: templates/index.html:122
 msgid ""
 "I also offer paid consultations in psychology or IT (development, "
-"security)."
+"infosec)."
 msgstr ""
 
-#: templates/index.html:131
+#: templates/index.html:130
 msgid "It is"
 msgstr ""
 
-#: templates/index.html:131
+#: templates/index.html:130
 msgid "in my timezone now"
 msgstr ""
 

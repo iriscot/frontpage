@@ -3,14 +3,14 @@
         "cards": [
         {
             "name": "Анонимный чат Amadeus",
-            "link": "http://t.me/amadeus_chat_bot",
+            "link": "tg://resolve?domain=amadeus_chat_bot",
             "image": "amadeus.webp",
             "language": "Python",
             "year": 2021
         },
         {
             "name": "QR Coder",
-            "link": "http://t.me/qr_custom_bot",
+            "link": "tg://resolve?domain=qr_custom_bot",
             "image": "qrcoder.webp",
             "language": "Python",
             "year": 2022
@@ -47,31 +47,45 @@
         "links": [
             {"title": "Inst", "href": "https://instagram.com/mikaminorth", "lang": "en"},
             {"title": "Twitter", "href": "https://x.com/mikaminorth", "lang": "en"},
-            {"title": "Telegram", "href": "https://t.me/iriscot_arts", "lang": "ru"}
+            {"title": "Telegram", "href": "https://t.me/mikami_arts", "lang": "ru"}
         ]
     },
     "etc": {
         "cards": [
         {
+            "name": "Mikami Arts",
+            "link": "tg://resolve?domain=mikami_arts",
+            "image": "mikami.webp",
+            "lang": "ru",
+            "desc": "Аниме арты"
+        },
+        {
             "name": "framed feelings 🌁",
-            "link": "http://t.me/framed_feelings",
+            "link": "tg://resolve?domain=framed_feelings",
             "image": "framed_feelings.webp",
             "lang": "ru",
             "desc": "Фотоальбом"
         },
         {
-            "name": "ПСИХОВОРОНКА",
-            "link": "http://t.me/Psychohunter",
-            "image": "Psychohunter.webp",
+            "name": "Wildest Dreams",
+            "link": "tg://resolve?domain=wildestdreamsever",
+            "image": "wildest.webp",
             "lang": "ru",
-            "desc": "Психология"
+            "desc": "Личный блог"
         },
         {
-            "name": "Цифровая Благодетель",
-            "link": "http://t.me/infosex",
-            "image": "infosex.webp",
+            "name": "Music",
+            "link": "https://t.me/+rKm0WOXJeUViMjgy",
+            "image": "music.webp",
             "lang": "ru",
-            "desc": "Инфобез"
+            "desc": "Мой плейлист"
+        },
+        {
+            "name": "Finally, цитатник",
+            "link": "tg://resolve?domain=quoteslib",
+            "image": "quotes.webp",
+            "lang": "ru",
+            "desc": "Цитатник"
         }
     ],
         "links": [

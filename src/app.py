@@ -29,7 +29,7 @@ def index():
     with open('media.json', 'r', encoding='utf-8') as json_file:
         media = json.load(json_file)
 
-    artworks = tg_photos_parse.get_imgs('iriscot_arts')
+    artworks = tg_photos_parse.get_imgs('mikami_arts')
 
     current_year = datetime.datetime.now().year
     user_language = get_locale()

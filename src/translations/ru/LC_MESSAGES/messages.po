@@ -1,14 +1,14 @@
 # Russian translations for Iriscot Frontpage.
-# Copyright (C) 2023 Iriscot Software
+# Copyright (C) 2024 Iriscot Software
 # This file is distributed under the same license as the Iriscot Frontpage
 # project.
-# Iriscot <me@iriscot.org>, 2023.
+# Iriscot <me@iriscot.org>, 2024.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: me@iriscot.org\n"
-"POT-Creation-Date: 2023-10-18 16:34+0300\n"
+"POT-Creation-Date: 2024-06-03 13:03+0300\n"
 "PO-Revision-Date: 2023-10-18 15:24+0300\n"
 "Last-Translator: Iriscot <me@iriscot.org>\n"
 "Language: ru\n"
@@ -20,53 +20,54 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.13.0\n"
 
-#: templates/index.html:9
+#: templates/index.html:10
 msgid "Everything you ever wanted to know about Iriscot."
 msgstr "Все, что вы когда-либо хотели узнать об Iriscot, но стеснялись спросить."
 
-#: templates/index.html:14
+#: templates/index.html:15
 msgid "Hi, I am Iriscot"
 msgstr "Привет, я Iriscot"
 
-#: templates/index.html:25
-msgid "Software"
-msgstr "Разрабатываю"
+#: templates/index.html:24
+msgid "My media"
+msgstr "Мои медиа"
 
-#: templates/index.html:57
+#: templates/index.html:61
+msgid "Software"
+msgstr ""
+
+#: templates/index.html:91
 msgid "Artworks"
 msgstr "Рисую"
 
-#: templates/index.html:85
-msgid "And also"
-msgstr "А также"
-
-#: templates/index.html:121
+#: templates/index.html:120
 msgid "Want to talk?"
 msgstr "А поговорить?"
 
-#: templates/index.html:122
+#: templates/index.html:121
 msgid ""
 "If you just want to chat, message me on <a "
 "href=\"http://t.me/iriscot\">Telegram</a> or send an email to <a "
 "href=\"mailto:me@iriscot.org\">me@iriscot.org</a>!"
 msgstr ""
-"Если просто хочешь поболтать, пиши в "
-"<a href=\"http://t.me/iriscot\">телегу</a> или на <a "
+"Если просто хочешь поболтать, пиши в <a "
+"href=\"http://t.me/iriscot\">телегу</a> или на <a "
 "href=\"mailto:me@iriscot.org\">почту</a>!"
 
-#: templates/index.html:123
+#: templates/index.html:122
+#, fuzzy
 msgid ""
 "I also offer paid consultations in psychology or IT (development, "
-"security)."
+"infosec)."
 msgstr ""
 "А ещё я могу провести для тебя платную консультацию по психологии или IT "
 "(разработка, безопасность)."
 
-#: templates/index.html:131
+#: templates/index.html:130
 msgid "It is"
 msgstr "Сейчас у меня"
 
-#: templates/index.html:131
+#: templates/index.html:130
 msgid "in my timezone now"
 msgstr " "
 

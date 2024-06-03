@@ -18,15 +18,51 @@
 
 	<main>
 
-<section class="all_the_links">
-		<div class="columns">
-    <div class="column">
+<section class="title_section all_the_links">
+
+    <div class="center">
+            <h2 class="section_title">{{ _('My media') }}</h2>
+        </div>
+<div class="projects">
+    {% for etc in media.etc.cards %}
+    <a href="{{ etc.link }}">
+    <div class="project hover_flashlight">
+        <img class="circle-image" src="{{ url_for('static', filename='images/' + etc.image) }}" alt="{{ etc.name }}">
+        <div class="text-content">
+            <span class="project-title">
+                {{ etc.name }}
+                {% if etc.lang != user_language %}
+                <span class="lang_code">{{ etc.lang }}</span>
+                {% endif %}
+            </span>
+            <p class="project-desc">{{ etc.desc }}</p>
+        </div>
+    </div>
+    </a>
+    {% endfor %}
+</div>
+
+<div class="center links-after">
+    <p>
+    {% for link in media.etc.links %}
+            <a class="button is-dark" href="{{ link.href }}">{{ link.title }}
+                {% if link.lang != user_language %}
+                <span class="lang_code">{{ link.lang }}</span>
+                {% endif %}
+                </a>
+    {% endfor %}
+</p>
+</div>
+
+
+
+
     	<div class="center">
-    		<div class="plashque">{{ _('Software') }}</div>
+            <h2 class="section_title">{{ _('Software') }}</h2>
     	</div>
 <div class="projects">
     {% for project in media.projects.cards %}
-    <div class="project">
+    <div class="project hover_flashlight">
         <img class="circle-image" src="{{ url_for('static', filename='images/' + project.image) }}" alt="{{ project.name }}">
         <div class="text-content">
             <span class="project-title">
@@ -41,20 +77,18 @@
 <div class="center links-after">
     <p>
     {% for link in media.projects.links %}
-            <a href="{{ link.href }}">{{ link.title }}</a>
+            <a class="button is-dark" href="{{ link.href }}">{{ link.title }}
                 {% if link.lang != user_language %}
                 <span class="lang_code">{{ link.lang }}</span>
                 {% endif %}
-            {% if not loop.last %} &middot; {% endif %}
+                </a>
     {% endfor %}
 </p>
 </div>
-    </div>
 
 
-    <div class="column">
         <div class="center">
-            <div class="plashque">{{ _('Artworks') }}</div>
+            <h2 class="section_title">{{ _('Artworks') }}</h2>
         </div>
 <div class="projects is-flex is-align-content-center">
     <div class="image-grid">
@@ -69,58 +103,23 @@
 <div class="center links-after">
     <p>
     {% for link in media.artworks.links %}
-            <a href="{{ link.href }}">{{ link.title }}</a>
+            <a class="button is-dark" href="{{ link.href }}">{{ link.title }}
                 {% if link.lang != user_language %}
                 <span class="lang_code">{{ link.lang }}</span>
                 {% endif %}
-            {% if not loop.last %} &middot; {% endif %}
+                </a>
     {% endfor %}
 </p>
 </div>
-    </div>
 
 
-    <div class="column">
-        <div class="center">
-            <div class="plashque">{{ _('And also') }}</div>
-        </div>
-<div class="projects">
-    {% for etc in media.etc.cards %}
-    <div class="project">
-        <img class="circle-image" src="{{ url_for('static', filename='images/' + etc.image) }}" alt="{{ etc.name }}">
-        <div class="text-content">
-            <span class="project-title">
-                <a href="{{ etc.link }}">{{ etc.name }}</a>
-                {% if etc.lang != user_language %}
-                <span class="lang_code">{{ etc.lang }}</span>
-                {% endif %}
-            </span>
-            <p class="project-desc">{{ etc.desc }}</p>
-        </div>
-    </div>
-    {% endfor %}
-</div>
-
-<div class="center links-after">
-    <p>
-    {% for link in media.etc.links %}
-            <a href="{{ link.href }}">{{ link.title }}</a>
-                {% if link.lang != user_language %}
-                <span class="lang_code">{{ link.lang }}</span>
-                {% endif %}
-            {% if not loop.last %} &middot; {% endif %}
-    {% endfor %}
-</p>
-</div>
-    </div>
-</div>
 </section>
 
 <section class="talk">
     <img src="{{ url_for('static', filename='images/likes.webp') }}" alt="Thumbs up icons" class="talk_bg">
     <h1>{{ _('Want to talk?') }}</h1>
     <p>{{ _('If you just want to chat, message me on <a href="http://t.me/iriscot">Telegram</a> or send an email to <a href="mailto:me@iriscot.org">me@iriscot.org</a>!') }}</p>
-    <p>{{ _('I also offer paid consultations in psychology or IT (development, security).') }}</p>
+    <p>{{ _('I also offer paid consultations in psychology or IT (development, infosec).') }}</p>
 </section>
 
 	</main>
@@ -141,7 +140,23 @@
 
 </body>
 
-<script>
+  <script>
+    // Select all card elements
+    var cards = document.querySelectorAll('.hover_flashlight');
+
+    // Add event listener to each card for the hover effect
+    cards.forEach(function(card) {
+      card.addEventListener('mousemove', function(e) {
+        const x = e.pageX - card.offsetLeft;
+        const y = e.pageY - card.offsetTop;
+
+
+        card.style.setProperty('--x', x + 'px');
+        card.style.setProperty('--y', y + 'px');
+      });
+    });
+
+
     function updateTime() {
         var gmtPlus3 = new Date(new Date().getTime() + (3 * 60 * 60 * 1000)); // Get current time and add 3 hours for GMT+3
 
