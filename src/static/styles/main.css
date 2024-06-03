@@ -1,220 +1,266 @@
-html, body{
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
 body {
-     background-color: #001;
-     color: #fff;
-     font-size: 14px;
-}
- a{
-     color: #fff;
-     text-decoration: none;
-}
- a:hover{
-     color: #a1c2df;
-}
- header{
-     text-align: center;
-     margin-bottom: 50px;
-     min-height: 200px;
-     background: radial-gradient(ellipse 100% 125% at center, rgba(93,13,115,1) 0%, rgba(0,0,0,0) 19%);
+    background-color: #001;
+    color: #fff;
+    font-size: 14px;
 }
 
- header h1{
-     font-size: 6em;
-     font-weight: 100;
-     margin-bottom: 0;
+a {
+    color: #fff;
+    text-decoration: none;
 }
- header h2{
-     color: #bcc7d1;
-     font-weight: 100;
-     margin-top: 5px;
+
+a:hover {
+    color: #a1c2df;
 }
- .main{
-     margin-top: 20px;
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+    min-height: 200px;
+    background: radial-gradient(ellipse 100% 125% at center, rgba(93, 13, 115, 1) 0%, rgba(0, 0, 0, 0) 19%);
 }
- .plashque{
-     background-color: rgba(92, 109, 125, 0.5);
-     border-radius: 5px;
-     text-transform: uppercase;
-     display: inline-block;
-     padding: 5px 10px;
-     margin: 0 auto;
-     font-weight: bold;
-     font-size: 0.8em;
+
+header h1 {
+    font-size: 6em;
+    font-weight: 100;
+    margin-bottom: 0;
 }
- .center{
-     text-align: center;
-     display: flex;
-     justify-content: center;
-}
- .right{
-     text-align: right;
-}
- .projects{
-     margin: 15px auto;
-}
- .project {
-display: flex;
-align-items: center;
-margin: 10px 1rem;
-border-radius: 4px;
-background: linear-gradient(139deg, rgba(2, 0, 37, 0), rgba(9, 9, 122, 0.51) 65.55%, rgba(176, 24, 179, 0.36));
-box-sizing: border-box;
-padding: 1rem 3rem;
-transition: background 1s ease;
-}
- .circle-image {
-     width: 50px;
-     height: 50px;
-     border-radius: 50%;
-     object-fit: cover;
-     margin-right: 20px;
-}
- .project .text-content {
-     flex: 1;
-}
- .project .project-title{
-     font-size: 1.6em;
-}
- .project .project-desc{
-margin-bottom: 0;
-margin-top: 5px;
-opacity: .8;
-position: absolute;
-bottom: 0;
-font-size: 3rem;
-font-weight: 100;
-right: 2rem;
-}
+
 @media screen and (max-width: 600px) {
-     .project .project-desc{
-        font-size: 1.6rem;
-     }
-      .project .project-title{
-     font-size: 1.2em;
-}
+    header h1 {
+        font-size: 4em;
+    }
 }
 
- .links-after{
-     opacity: .8;
+header h2 {
+    color: #bcc7d1;
+    font-weight: 100;
+    margin-top: 5px;
 }
- section.talk{
-     background: linear-gradient(270deg, #3d0769, #073469, #005974);
-     padding: 30px;
-     margin-top: 50px;
-     position: relative;
+
+.main {
+    margin-top: 20px;
 }
- section.talk .talk_bg{
-     position: absolute;
-     right: 0;
-     top: 0px;
-     max-height: 150px;
-     opacity: .1;
+
+.plashque {
+    background-color: rgba(92, 109, 125, 0.5);
+    border-radius: 5px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 0.8em;
 }
- section.talk a{
-     border-bottom: 1px solid #fff;
+
+.center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
- section.talk h1{
-     font-size: 2em;
-     font-weight: bold;
-     margin-bottom: 10px;
+
+.right {
+    text-align: right;
 }
- footer{
-     margin-top: 20px;
-     opacity: .8;
-     padding: 0 40px;
+
+.projects {
+    margin: 15px auto;
 }
+
+.project {
+    display: flex;
+    align-items: center;
+    margin: 10px 1rem;
+    border-radius: 4px;
+    background: linear-gradient(139deg, rgba(2, 0, 37, 0), rgba(9, 9, 122, 0.51) 65.55%, rgba(176, 24, 179, 0.36));
+    box-sizing: border-box;
+    padding: 1rem 3rem;
+    transition: background 1s ease;
+}
+
+@media screen and (max-width: 600px) {
+    .project {
+        border-radius: 0;
+    }
+
+    .projects {
+        margin: 0 auto;
+    }
+}
+
+.circle-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.project .text-content {
+    flex: 1;
+}
+
+.project .project-title {
+    font-size: 1.6em;
+}
+
+.project .project-desc {
+    margin-bottom: 0;
+    margin-top: 5px;
+    opacity: .8;
+    position: absolute;
+    bottom: 0;
+    font-size: 3rem;
+    font-weight: 100;
+    right: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .project .project-desc {
+        font-size: 1.6rem;
+    }
+
+    .project .project-title {
+        font-size: 1.2em;
+    }
+}
+
+.links-after {
+    opacity: .8;
+}
+
+section.talk {
+    background: linear-gradient(270deg, #3d0769, #073469, #005974);
+    padding: 30px;
+    margin-top: 50px;
+    position: relative;
+}
+
+section.talk .talk_bg {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    max-height: 150px;
+    opacity: .1;
+}
+
+section.talk a {
+    border-bottom: 1px solid #fff;
+}
+
+section.talk h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    opacity: .8;
+    padding: 0 40px;
+}
+
 @media (max-width: 767px) {
     footer .columns .column {
         text-align: center;
     }
 }
- .lang_code{
-     font-variant: small-caps;
-     font-size: 0.6em;
-     background-color: #4f575e;
-     border-radius: 3px;
-     padding: 0 2px;
-     font-weight: bold;
-     opacity: .5;
-     user-select: none;
-     cursor: default;
+
+.lang_code {
+    font-variant: small-caps;
+    font-size: 0.6em;
+    background-color: #4f575e;
+    border-radius: 3px;
+    padding: 0 2px;
+    font-weight: bold;
+    opacity: .5;
+    user-select: none;
+    cursor: default;
 }
 
 
 .image-grid {
-  column-count: 4;
-  --webkit-column-count: 4;
-  --moz-column-count: 4;
-  gap: 1rem;
+    column-count: 4;
+    --webkit-column-count: 4;
+    --moz-column-count: 4;
+    gap: 1rem;
 }
 
 .image-item img {
-  height: auto;
-  width: 100%;
-  border-radius: 4px;
+    height: auto;
+    width: 100%;
+    border-radius: 4px;
 }
 
 
 /* Responsive-ness for different screen-sizes */
 @media screen and (max-width: 810px) {
-  .image-grid {
-    column-count: 3;
-    --webkit-column-count: 3;
-    --moz-column-count: 3;
-  }
+    .image-grid {
+        column-count: 3;
+        --webkit-column-count: 3;
+        --moz-column-count: 3;
+    }
 }
 
 @media screen and (max-width: 500px) {
-  .image-grid {
-    column-count: 2;
-    --webkit-column-count: 2;
-    --moz-column-count: 2;
-  }
+    .image-grid {
+        column-count: 2;
+        --webkit-column-count: 2;
+        --moz-column-count: 2;
+    }
 }
 
 @media screen and (max-width: 400px) {
-  .image-grid {
-    column-count: 1;
-    --webkit-column-count: 1;
-    --moz-column-count: 1;
-  }
+    .image-grid {
+        column-count: 1;
+        --webkit-column-count: 1;
+        --moz-column-count: 1;
+    }
 }
 
 
-.section_title{
+.section_title {
     font-size: 4rem;
-font-weight: 100;
-/*margin-left: 3rem;*/
+    font-weight: 100;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .section_title {
+        font-size: 2.4em;
+    }
 }
 
 
 
 /* ------------ CARD ------------ */
 .hover_flashlight {
-  position: relative;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  overflow: hidden;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    overflow: hidden;
 }
 
 .hover_flashlight:after {
-  content: "";
-  width: 1000%;
-  height: 1000%;
-  position: absolute;
-  top: var(--y);
-  left: var(--x);
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  background: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.18), transparent);
-  transition: opacity 0.7s ease-out;
+    content: "";
+    width: 1000%;
+    height: 1000%;
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.18), transparent);
+    transition: opacity 0.7s ease-out;
 }
 
 /* ------------ STATES ------------ */
 .hover_flashlight:hover:after,
 .hover_flashlight:hover {
-  opacity: 1;
+    opacity: 1;
 }

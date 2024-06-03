@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="{{ user_language }}">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="{{ url_for('static', filename='styles/bulma.min.css') }}">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/bulma.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow" />
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
     <meta name="description" content="{{ _('Everything you ever wanted to know about Iriscot.') }}" />
-	<title>Iriscot</title>
+    <title>Iriscot</title>
+
+    <meta name="author" content="Iriscot">
+    <meta name="keywords" content="Iriscot, Anime, Artworks, Digital, Software">
+    <meta name="theme-color" content="#000">
+    <link rel="canonical" href="https://iriscot.org/">
+    <meta property="og:title" content="Iriscot">
+    <meta property="og:description" content="{{ _('Everything you ever wanted to know about Iriscot.') }}">
+    <meta property="og:image" content="{{ url_for('static', filename='images/og-image.jpg') }}">
+    <meta property="og:url" content="https://iriscot.org/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Iriscot's website">
 </head>
+
 <body>
 	<header class="is-align-content-center is-justify-content-center is-flex is-flex-direction-column">
 		<h1>{{ _('Hi, I am Iriscot') }}</h1>
